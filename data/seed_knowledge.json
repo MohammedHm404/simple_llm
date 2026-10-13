@@ -1,0 +1,639 @@
+{
+  "version": 2,
+  "identity": {
+	"name": "عاقل",
+	"personality": "مساعد ذكي ليبي، يتكلم عربي فصيح مع لهجة ليبية، ويفهم اللهجات الأخرى"
+  },
+
+  "intents": [
+	{
+	  "tag": "greeting_ar",
+	  "patterns": ["مرحبا", "السلام عليكم", "اهلا", "هاي", "صباح الخير", "مساء الخير", "شلونك", "شحالك", "كيف حالك", "ازيك", "شلونك", "كي داير", "لاباس", "واش راك"],
+	  "responses": ["وعليكم السلام، كيف نقدر نعاونك؟", "أهلا بيك! شنو الجديد؟", "مرحبا، شنو نخدمك فيه؟", "هلا! كيف حالك انت؟"]
+	},
+	{
+	  "tag": "greeting_en",
+	  "patterns": ["hello", "hi", "hey", "good morning", "good evening", "how are you", "what's up"],
+	  "responses": ["Hello! How can I help?", "Hi! What's new?", "Hey! How are you?", "Good to see you!"]
+	},
+	{
+	  "tag": "farewell_ar",
+	  "patterns": ["وداعا", "باي", "الى اللقاء", "مع السلامة", "تصبح على خير", "يلا نشوفك", "سلام", "في امان الله"],
+	  "responses": ["مع السلامة، خلي بالك على روحك.", "باي، نتمنى نشوفك قريب.", "الى اللقاء، بالتوفيق!"]
+	},
+	{
+	  "tag": "farewell_en",
+	  "patterns": ["bye", "goodbye", "see you", "good night", "take care"],
+	  "responses": ["Bye! Take care.", "See you soon!", "Good night!"]
+	},
+	{
+	  "tag": "thanks_ar",
+	  "patterns": ["شكرا", "مشكور", "بارك الله فيك", "يعطيك العافية", "تسلم", "ربي يخليك", "يعطيك الصحة", "ميرسي"],
+	  "responses": ["على الرحب والسعة.", "لا شكر على واجب.", "تسلم انت.", "العفو."]
+	},
+	{
+	  "tag": "thanks_en",
+	  "patterns": ["thanks", "thank you", "appreciate it", "thx"],
+	  "responses": ["You're welcome!", "No problem.", "My pleasure."]
+	},
+	{
+	  "tag": "who_are_you",
+	  "patterns": ["من انت", "شنو اسمك", "عرف بنفسك", "انت مين", "ما اسمك", "منو انت"],
+	  "responses": ["أنا عاقل، مساعد ذكي ليبي. أتعلم منك كل يوم.", "اسمي عاقل، موجود باش نعاونك."]
+	},
+	{
+	  "tag": "user_name_ask",
+	  "patterns": ["شنو اسمي", "تعرف اسمي", "من انا", "ما هو اسمي"],
+	  "responses": ["{name}"]
+	},
+	{
+	  "tag": "time",
+	  "patterns": ["كم الساعة", "شنو الوقت", "الساعة كم", "الوقت"],
+	  "responses": ["{time}"]
+	},
+	{
+	  "tag": "date",
+	  "patterns": ["شنو التاريخ", "تاريخ اليوم", "اليوم كم", "التاريخ"],
+	  "responses": ["{date}"]
+	}
+  ],
+
+  "emotions": [
+	{
+	  "tag": "sad",
+	  "keywords": ["حزين", "زعلان", "متضايق", "مكتئب", "ضايق", "زعفان", "مقهور", "tired of life"],
+	  "responses": ["الله يعينك، شنو صار؟", "احكيلي، أنا سامعك.", "خليك قوي، كل شي يعدي."]
+	},
+	{
+	  "tag": "happy",
+	  "keywords": ["فرحان", "سعيد", "مبسوط", "الحمد لله", "تمام", "زي الفل", "مبسوط"],
+	  "responses": ["الحمد لله، يارب دايم الفرح.", "منيح! الفرح يبين في كلامك."]
+	},
+	{
+	  "tag": "angry",
+	  "keywords": ["غاضب", "معصب", "زعفان", "مقهور", "عصبي", "متضايق"],
+	  "responses": ["خذ نفس عميق، شنو مضايقك؟", "الهدوء أفضل، احكيلي شنو صار."]
+	},
+	{
+	  "tag": "tired",
+	  "keywords": ["تعبان", "مرهق", "نعسان", "مهدود", "مليت"],
+	  "responses": ["خذلك راحة، صحتك أهم.", "التعب طبيعي، ارتاح واشرب ماي."]
+	},
+	{
+	  "tag": "afraid",
+	  "keywords": ["خايف", "قلقان", "متوتر", "مرعوب", "خوف"],
+	  "responses": ["لا تخاف، حاول تهدى.", "القلق طبيعي، بس خذ نفس."]
+	},
+	{
+	  "tag": "love",
+	  "keywords": ["بحبك", "نحبك", "احبك", "حبيبي", "بحبك"],
+	  "responses": ["وانا كذلك، تسلم.", "هذا من طيبك."]
+	}
+  ],
+
+  "world_countries": [
+	{
+	  "ar": "ليبيا",
+	  "en": "Libya",
+	  "capital_ar": "طرابلس",
+	  "capital_en": "Tripoli",
+	  "continent_ar": "أفريقيا",
+	  "continent_en": "Africa",
+	  "region_ar": "شمال أفريقيا",
+	  "location_ar": "شمال أفريقيا، على البحر المتوسط",
+	  "neighbors_ar": ["مصر", "السودان", "تشاد", "النيجر", "الجزائر", "تونس"],
+	  "population": "حوالي 7 ملايين",
+	  "currency_ar": "الدينار الليبي",
+	  "currency_en": "Libyan Dinar"
+	},
+	{
+	  "ar": "مصر",
+	  "en": "Egypt",
+	  "capital_ar": "القاهرة",
+	  "capital_en": "Cairo",
+	  "continent_ar": "أفريقيا",
+	  "continent_en": "Africa",
+	  "region_ar": "شمال أفريقيا",
+	  "location_ar": "شمال شرق أفريقيا، على البحر المتوسط والبحر الأحمر",
+	  "neighbors_ar": ["ليبيا", "السودان", "فلسطين", "إسرائيل"],
+	  "population": "حوالي 110 ملايين",
+	  "currency_ar": "الجنيه المصري",
+	  "currency_en": "Egyptian Pound"
+	},
+	{
+	  "ar": "الجزائر",
+	  "en": "Algeria",
+	  "capital_ar": "الجزائر العاصمة",
+	  "capital_en": "Algiers",
+	  "continent_ar": "أفريقيا",
+	  "continent_en": "Africa",
+	  "region_ar": "شمال أفريقيا",
+	  "location_ar": "شمال أفريقيا، على البحر المتوسط",
+	  "neighbors_ar": ["ليبيا", "تونس", "المغرب", "موريتانيا", "مالي", "النيجر"],
+	  "population": "حوالي 45 مليون",
+	  "currency_ar": "الدينار الجزائري",
+	  "currency_en": "Algerian Dinar"
+	},
+	{
+	  "ar": "تونس",
+	  "en": "Tunisia",
+	  "capital_ar": "تونس العاصمة",
+	  "capital_en": "Tunis",
+	  "continent_ar": "أفريقيا",
+	  "continent_en": "Africa",
+	  "region_ar": "شمال أفريقيا",
+	  "location_ar": "شمال أفريقيا، على البحر المتوسط",
+	  "neighbors_ar": ["ليبيا", "الجزائر"],
+	  "population": "حوالي 12 مليون",
+	  "currency_ar": "الدينار التونسي",
+	  "currency_en": "Tunisian Dinar"
+	},
+	{
+	  "ar": "المغرب",
+	  "en": "Morocco",
+	  "capital_ar": "الرباط",
+	  "capital_en": "Rabat",
+	  "continent_ar": "أفريقيا",
+	  "continent_en": "Africa",
+	  "region_ar": "شمال أفريقيا",
+	  "location_ar": "شمال غرب أفريقيا، على المحيط الأطلسي والبحر المتوسط",
+	  "neighbors_ar": ["الجزائر", "موريتانيا", "إسبانيا"],
+	  "population": "حوالي 37 مليون",
+	  "currency_ar": "الدرهم المغربي",
+	  "currency_en": "Moroccan Dirham"
+	},
+	{
+	  "ar": "السودان",
+	  "en": "Sudan",
+	  "capital_ar": "الخرطوم",
+	  "capital_en": "Khartoum",
+	  "continent_ar": "أفريقيا",
+	  "continent_en": "Africa",
+	  "region_ar": "شمال أفريقيا",
+	  "location_ar": "شمال شرق أفريقيا، على البحر الأحمر",
+	  "neighbors_ar": ["مصر", "ليبيا", "تشاد", "جنوب السودان", "إثيوبيا", "إريتريا"],
+	  "population": "حوالي 45 مليون",
+	  "currency_ar": "الجنيه السوداني",
+	  "currency_en": "Sudanese Pound"
+	},
+	{
+	  "ar": "المملكة العربية السعودية",
+	  "en": "Saudi Arabia",
+	  "capital_ar": "الرياض",
+	  "capital_en": "Riyadh",
+	  "continent_ar": "آسيا",
+	  "continent_en": "Asia",
+	  "region_ar": "الشرق الأوسط",
+	  "location_ar": "شبه الجزيرة العربية",
+	  "neighbors_ar": ["الأردن", "العراق", "الكويت", "قطر", "الإمارات", "عمان", "اليمن"],
+	  "population": "حوالي 35 مليون",
+	  "currency_ar": "الريال السعودي",
+	  "currency_en": "Saudi Riyal"
+	},
+	{
+	  "ar": "الإمارات العربية المتحدة",
+	  "en": "United Arab Emirates",
+	  "capital_ar": "أبو ظبي",
+	  "capital_en": "Abu Dhabi",
+	  "continent_ar": "آسيا",
+	  "continent_en": "Asia",
+	  "region_ar": "الخليج العربي",
+	  "location_ar": "شرق شبه الجزيرة العربية، على الخليج العربي",
+	  "neighbors_ar": ["السعودية", "عمان", "قطر"],
+	  "population": "حوالي 10 ملايين",
+	  "currency_ar": "الدرهم الإماراتي",
+	  "currency_en": "UAE Dirham"
+	},
+	{
+	  "ar": "قطر",
+	  "en": "Qatar",
+	  "capital_ar": "الدوحة",
+	  "capital_en": "Doha",
+	  "continent_ar": "آسيا",
+	  "continent_en": "Asia",
+	  "region_ar": "الخليج العربي",
+	  "location_ar": "شبه جزيرة صغيرة في الخليج العربي",
+	  "neighbors_ar": ["السعودية"],
+	  "population": "حوالي 3 ملايين",
+	  "currency_ar": "الريال القطري",
+	  "currency_en": "Qatari Riyal"
+	},
+	{
+	  "ar": "الكويت",
+	  "en": "Kuwait",
+	  "capital_ar": "مدينة الكويت",
+	  "capital_en": "Kuwait City",
+	  "continent_ar": "آسيا",
+	  "continent_en": "Asia",
+	  "region_ar": "الخليج العربي",
+	  "location_ar": "شمال شرق شبه الجزيرة العربية",
+	  "neighbors_ar": ["السعودية", "العراق"],
+	  "population": "حوالي 4 ملايين",
+	  "currency_ar": "الدينار الكويتي",
+	  "currency_en": "Kuwaiti Dinar"
+	},
+	{
+	  "ar": "البحرين",
+	  "en": "Bahrain",
+	  "capital_ar": "المنامة",
+	  "capital_en": "Manama",
+	  "continent_ar": "آسيا",
+	  "continent_en": "Asia",
+	  "region_ar": "الخليج العربي",
+	  "location_ar": "جزيرة في الخليج العربي",
+	  "neighbors_ar": ["السعودية", "قطر"],
+	  "population": "حوالي 1.5 مليون",
+	  "currency_ar": "الدينار البحريني",
+	  "currency_en": "Bahraini Dinar"
+	},
+	{
+	  "ar": "عمان",
+	  "en": "Oman",
+	  "capital_ar": "مسقط",
+	  "capital_en": "Muscat",
+	  "continent_ar": "آسيا",
+	  "continent_en": "Asia",
+	  "region_ar": "الخليج العربي",
+	  "location_ar": "جنوب شرق شبه الجزيرة العربية",
+	  "neighbors_ar": ["السعودية", "الإمارات", "اليمن"],
+	  "population": "حوالي 5 ملايين",
+	  "currency_ar": "الريال العماني",
+	  "currency_en": "Omani Rial"
+	},
+	{
+	  "ar": "الأردن",
+	  "en": "Jordan",
+	  "capital_ar": "عمان",
+	  "capital_en": "Amman",
+	  "continent_ar": "آسيا",
+	  "continent_en": "Asia",
+	  "region_ar": "الشرق الأوسط",
+	  "location_ar": "غرب آسيا، شرق نهر الأردن",
+	  "neighbors_ar": ["السعودية", "العراق", "سوريا", "فلسطين", "إسرائيل"],
+	  "population": "حوالي 11 مليون",
+	  "currency_ar": "الدينار الأردني",
+	  "currency_en": "Jordanian Dinar"
+	},
+	{
+	  "ar": "لبنان",
+	  "en": "Lebanon",
+	  "capital_ar": "بيروت",
+	  "capital_en": "Beirut",
+	  "continent_ar": "آسيا",
+	  "continent_en": "Asia",
+	  "region_ar": "الشرق الأوسط",
+	  "location_ar": "شرق البحر المتوسط",
+	  "neighbors_ar": ["سوريا", "فلسطين", "إسرائيل"],
+	  "population": "حوالي 5 ملايين",
+	  "currency_ar": "الليرة اللبنانية",
+	  "currency_en": "Lebanese Pound"
+	},
+	{
+	  "ar": "سوريا",
+	  "en": "Syria",
+	  "capital_ar": "دمشق",
+	  "capital_en": "Damascus",
+	  "continent_ar": "آسيا",
+	  "continent_en": "Asia",
+	  "region_ar": "الشرق الأوسط",
+	  "location_ar": "غرب آسيا، على البحر المتوسط",
+	  "neighbors_ar": ["تركيا", "العراق", "الأردن", "لبنان", "فلسطين", "إسرائيل"],
+	  "population": "حوالي 18 مليون",
+	  "currency_ar": "الليرة السورية",
+	  "currency_en": "Syrian Pound"
+	},
+	{
+	  "ar": "العراق",
+	  "en": "Iraq",
+	  "capital_ar": "بغداد",
+	  "capital_en": "Baghdad",
+	  "continent_ar": "آسيا",
+	  "continent_en": "Asia",
+	  "region_ar": "الشرق الأوسط",
+	  "location_ar": "غرب آسيا، بين نهري دجلة والفرات",
+	  "neighbors_ar": ["تركيا", "إيران", "الكويت", "السعودية", "الأردن", "سوريا"],
+	  "population": "حوالي 42 مليون",
+	  "currency_ar": "الدينار العراقي",
+	  "currency_en": "Iraqi Dinar"
+	},
+	{
+	  "ar": "فلسطين",
+	  "en": "Palestine",
+	  "capital_ar": "القدس (المعلنة) / رام الله (الإدارية)",
+	  "capital_en": "Jerusalem (claimed) / Ramallah (administrative)",
+	  "continent_ar": "آسيا",
+	  "continent_en": "Asia",
+	  "region_ar": "الشرق الأوسط",
+	  "location_ar": "شرق البحر المتوسط",
+	  "neighbors_ar": ["إسرائيل", "الأردن", "مصر"],
+	  "population": "حوالي 5 ملايين",
+	  "currency_ar": "الشيكل الإسرائيلي / الدينار الأردني",
+	  "currency_en": "Israeli Shekel / Jordanian Dinar"
+	},
+	{
+	  "ar": "اليمن",
+	  "en": "Yemen",
+	  "capital_ar": "صنعاء",
+	  "capital_en": "Sana'a",
+	  "continent_ar": "آسيا",
+	  "continent_en": "Asia",
+	  "region_ar": "الشرق الأوسط",
+	  "location_ar": "جنوب شبه الجزيرة العربية",
+	  "neighbors_ar": ["السعودية", "عمان"],
+	  "population": "حوالي 30 مليون",
+	  "currency_ar": "الريال اليمني",
+	  "currency_en": "Yemeni Rial"
+	},
+	{
+	  "ar": "الولايات المتحدة الأمريكية",
+	  "en": "United States of America",
+	  "capital_ar": "واشنطن العاصمة",
+	  "capital_en": "Washington, D.C.",
+	  "continent_ar": "أمريكا الشمالية",
+	  "continent_en": "North America",
+	  "region_ar": "أمريكا الشمالية",
+	  "location_ar": "أمريكا الشمالية، بين المحيطين الأطلسي والهادئ",
+	  "neighbors_ar": ["كندا", "المكسيك"],
+	  "population": "حوالي 335 مليون",
+	  "currency_ar": "الدولار الأمريكي",
+	  "currency_en": "US Dollar"
+	},
+	{
+	  "ar": "المملكة المتحدة",
+	  "en": "United Kingdom",
+	  "capital_ar": "لندن",
+	  "capital_en": "London",
+	  "continent_ar": "أوروبا",
+	  "continent_en": "Europe",
+	  "region_ar": "أوروبا الغربية",
+	  "location_ar": "جزر بريطانيا، شمال غرب أوروبا",
+	  "neighbors_ar": ["أيرلندا", "فرنسا"],
+	  "population": "حوالي 67 مليون",
+	  "currency_ar": "الجنيه الإسترليني",
+	  "currency_en": "British Pound"
+	},
+	{
+	  "ar": "فرنسا",
+	  "en": "France",
+	  "capital_ar": "باريس",
+	  "capital_en": "Paris",
+	  "continent_ar": "أوروبا",
+	  "continent_en": "Europe",
+	  "region_ar": "أوروبا الغربية",
+	  "location_ar": "أوروبا الغربية، على المحيط الأطلسي والبحر المتوسط",
+	  "neighbors_ar": ["بلجيكا", "لوكسمبورغ", "ألمانيا", "سويسرا", "إيطاليا", "إسبانيا", "أندورا", "موناكو"],
+	  "population": "حوالي 68 مليون",
+	  "currency_ar": "اليورو",
+	  "currency_en": "Euro"
+	},
+	{
+	  "ar": "ألمانيا",
+	  "en": "Germany",
+	  "capital_ar": "برلين",
+	  "capital_en": "Berlin",
+	  "continent_ar": "أوروبا",
+	  "continent_en": "Europe",
+	  "region_ar": "أوروبا الوسطى",
+	  "location_ar": "أوروبا الوسطى",
+	  "neighbors_ar": ["الدنمارك", "بولندا", "التشيك", "النمسا", "سويسرا", "فرنسا", "لوكسمبورغ", "بلجيكا", "هولندا"],
+	  "population": "حوالي 84 مليون",
+	  "currency_ar": "اليورو",
+	  "currency_en": "Euro"
+	},
+	{
+	  "ar": "إيطاليا",
+	  "en": "Italy",
+	  "capital_ar": "روما",
+	  "capital_en": "Rome",
+	  "continent_ar": "أوروبا",
+	  "continent_en": "Europe",
+	  "region_ar": "أوروبا الجنوبية",
+	  "location_ar": "شبه الجزيرة الإيطالية، جنوب أوروبا",
+	  "neighbors_ar": ["فرنسا", "سويسرا", "النمسا", "سلوفينيا", "سان مارينو", "الفاتيكان"],
+	  "population": "حوالي 59 مليون",
+	  "currency_ar": "اليورو",
+	  "currency_en": "Euro"
+	},
+	{
+	  "ar": "إسبانيا",
+	  "en": "Spain",
+	  "capital_ar": "مدريد",
+	  "capital_en": "Madrid",
+	  "continent_ar": "أوروبا",
+	  "continent_en": "Europe",
+	  "region_ar": "أوروبا الجنوبية",
+	  "location_ar": "شبه الجزيرة الإيبيرية، جنوب غرب أوروبا",
+	  "neighbors_ar": ["فرنسا", "أندورا", "البرتغال", "المغرب"],
+	  "population": "حوالي 47 مليون",
+	  "currency_ar": "اليورو",
+	  "currency_en": "Euro"
+	},
+	{
+	  "ar": "روسيا",
+	  "en": "Russia",
+	  "capital_ar": "موسكو",
+	  "capital_en": "Moscow",
+	  "continent_ar": "أوروبا وآسيا",
+	  "continent_en": "Europe and Asia",
+	  "region_ar": "أوراسيا",
+	  "location_ar": "شمال أوراسيا، يمتد من أوروبا الشرقية إلى شمال آسيا",
+	  "neighbors_ar": ["النرويج", "فنلندا", "إستونيا", "لاتفيا", "ليتوانيا", "بولندا", "بيلاروسيا", "أوكرانيا", "جورجيا", "أذربيجان", "كازاخستان", "الصين", "منغوليا", "كوريا الشمالية"],
+	  "population": "حوالي 144 مليون",
+	  "currency_ar": "الروبل الروسي",
+	  "currency_en": "Russian Ruble"
+	},
+	{
+	  "ar": "الصين",
+	  "en": "China",
+	  "capital_ar": "بكين",
+	  "capital_en": "Beijing",
+	  "continent_ar": "آسيا",
+	  "continent_en": "Asia",
+	  "region_ar": "شرق آسيا",
+	  "location_ar": "شرق آسيا",
+	  "neighbors_ar": ["روسيا", "منغوليا", "كازاخستان", "قيرغيزستان", "طاجيكستان", "أفغانستان", "باكستان", "الهند", "نيبال", "بوتان", "ميانمار", "لاوس", "فيتنام", "كوريا الشمالية"],
+	  "population": "حوالي 1.4 مليار",
+	  "currency_ar": "اليوان الصيني",
+	  "currency_en": "Chinese Yuan"
+	},
+	{
+	  "ar": "اليابان",
+	  "en": "Japan",
+	  "capital_ar": "طوكيو",
+	  "capital_en": "Tokyo",
+	  "continent_ar": "آسيا",
+	  "continent_en": "Asia",
+	  "region_ar": "شرق آسيا",
+	  "location_ar": "أرخبيل في شرق آسيا، المحيط الهادئ",
+	  "neighbors_ar": ["كوريا الجنوبية", "الصين", "روسيا"],
+	  "population": "حوالي 125 مليون",
+	  "currency_ar": "الين الياباني",
+	  "currency_en": "Japanese Yen"
+	},
+	{
+	  "ar": "الهند",
+	  "en": "India",
+	  "capital_ar": "نيودلهي",
+	  "capital_en": "New Delhi",
+	  "continent_ar": "آسيا",
+	  "continent_en": "Asia",
+	  "region_ar": "جنوب آسيا",
+	  "location_ar": "جنوب آسيا، شبه القارة الهندية",
+	  "neighbors_ar": ["باكستان", "الصين", "نيبال", "بوتان", "بنغلاديش", "ميانمار"],
+	  "population": "حوالي 1.4 مليار",
+	  "currency_ar": "الروبية الهندية",
+	  "currency_en": "Indian Rupee"
+	},
+	{
+	  "ar": "البرازيل",
+	  "en": "Brazil",
+	  "capital_ar": "برازيليا",
+	  "capital_en": "Brasilia",
+	  "continent_ar": "أمريكا الجنوبية",
+	  "continent_en": "South America",
+	  "region_ar": "أمريكا الجنوبية",
+	  "location_ar": "شرق أمريكا الجنوبية، على المحيط الأطلسي",
+	  "neighbors_ar": ["الأرجنتين", "بوليفيا", "بيرو", "كولومبيا", "فنزويلا", "غيانا", "سورينام", "أوروغواي", "باراغواي", "غيانا الفرنسية"],
+	  "population": "حوالي 215 مليون",
+	  "currency_ar": "الريال البرازيلي",
+	  "currency_en": "Brazilian Real"
+	},
+	{
+	  "ar": "أستراليا",
+	  "en": "Australia",
+	  "capital_ar": "كانبيرا",
+	  "capital_en": "Canberra",
+	  "continent_ar": "أوقيانوسيا",
+	  "continent_en": "Oceania",
+	  "region_ar": "أوقيانوسيا",
+	  "location_ar": "أستراليا، بين المحيطين الهندي والهادئ",
+	  "neighbors_ar": ["إندونيسيا", "بابوا غينيا الجديدة", "نيوزيلندا"],
+	  "population": "حوالي 26 مليون",
+	  "currency_ar": "الدولار الأسترالي",
+	  "currency_en": "Australian Dollar"
+	},
+	{
+	  "ar": "كندا",
+	  "en": "Canada",
+	  "capital_ar": "أوتاوا",
+	  "capital_en": "Ottawa",
+	  "continent_ar": "أمريكا الشمالية",
+	  "continent_en": "North America",
+	  "region_ar": "أمريكا الشمالية",
+	  "location_ar": "شمال أمريكا الشمالية",
+	  "neighbors_ar": ["الولايات المتحدة", "الدنمارك (جرينلاند)"],
+	  "population": "حوالي 40 مليون",
+	  "currency_ar": "الدولار الكندي",
+	  "currency_en": "Canadian Dollar"
+	}
+  ],
+
+  "dialects": {
+	"libyan": {
+	  "greeting": ["شحالك", "شنو أخبارك", "وين رايح", "شني صار"],
+	  "words": {
+		"باهي": "جيد",
+		"شنو": "ماذا",
+		"وين": "أين",
+		"توا": "الآن",
+		"بزاف": "كثير",
+		"شوية": "قليل",
+		"هكي": "هكذا",
+		"كي": "مثل",
+		"درك": "الآن"
+	  },
+	  "expressions": {
+		"ربي يخليك": "شكراً",
+		"يعطيك الصحة": "أحسنت",
+		"على راسي": "تكرم عينك",
+		"خلي بالك": "احترس",
+		"الله يعينك": "تعاطف"
+	  }
+	},
+	"egyptian": {
+	  "greeting": ["إزيك", "عامل إيه", "أخبارك إيه", "صباح الفل"],
+	  "words": {
+		"إيه": "ماذا",
+		"فين": "أين",
+		"دلوقتي": "الآن",
+		"كتير": "كثير",
+		"شوية": "قليل",
+		"كده": "هكذا",
+		"زي": "مثل"
+	  },
+	  "expressions": {
+		"ربنا يكرمك": "شكراً",
+		"تسلم إيدك": "أحسنت",
+		"على راسي": "تكرم عينك",
+		"خلي بالك": "احترس"
+	  }
+	},
+	"gulf": {
+	  "greeting": ["شلونك", "شخبارك", "عساك طيب", "هلا والله"],
+	  "words": {
+		"شنو": "ماذا",
+		"وين": "أين",
+		"الحين": "الآن",
+		"وايد": "كثير",
+		"شوي": "قليل",
+		"چذي": "هكذا",
+		"مثل": "مثل"
+	  },
+	  "expressions": {
+		"يعطيك العافية": "شكراً",
+		"ما قصرت": "أحسنت",
+		"على راسي": "تكرم عينك",
+		"خلي بالك": "احترس"
+	  }
+	},
+	"levantine": {
+	  "greeting": ["كيفك", "شو أخبارك", "شلونك", "صباح الخير"],
+	  "words": {
+		"شو": "ماذا",
+		"وين": "أين",
+		"هلق": "الآن",
+		"كتير": "كثير",
+		"شوي": "قليل",
+		"هيك": "هكذا",
+		"مثل": "مثل"
+	  },
+	  "expressions": {
+		"يعطيك العافية": "شكراً",
+		"تسلم": "أحسنت",
+		"على راسي": "تكرم عينك",
+		"خلي بالك": "احترس"
+	  }
+	},
+	"moroccan": {
+	  "greeting": ["لاباس", "كي داير", "شنو أخبارك", "صباح الخير"],
+	  "words": {
+		"شنو": "ماذا",
+		"فين": "أين",
+		"دابا": "الآن",
+		"بزاف": "كثير",
+		"شوية": "قليل",
+		"هكاك": "هكذا",
+		"بحال": "مثل"
+	  },
+	  "expressions": {
+		"الله يخليك": "شكراً",
+		"الله يعطيك الصحة": "أحسنت",
+		"على راسي": "تكرم عينك",
+		"رد بالك": "احترس"
+	  }
+	}
+  },
+
+  "knowledge": [
+	{"q": "شنو الذكاء الاصطناعي", "a": "الذكاء الاصطناعي هو محاولة جعل الآلات تفكر وتتعلم مثل البشر."},
+	{"q": "شنو تعلم الآلة", "a": "تعلم الآلة فرع من الذكاء الاصطناعي يتعلم من البيانات بدون برمجة صريحة."},
+	{"q": "شنو الشبكة العصبية", "a": "نموذج حسابي مستوحى من الدماغ، يتكون من طبقات من العقد."},
+	{"q": "شنو LLM", "a": "نموذج لغوي كبير، شبكة عصبية ضخمة تتنبأ بالكلمة التالية."},
+	{"q": "شنو ChatGPT", "a": "نموذج لغوي كبير من OpenAI يحاور ويتعلم من مليارات النصوص."},
+	{"q": "شنو الإنترنت", "a": "شبكة عالمية تربط ملايين الأجهزة لتبادل المعلومات."},
+	{"q": "شنو الكمبيوتر", "a": "جهاز إلكتروني يعالج البيانات وينفذ الأوامر."},
+	{"q": "شنو البرمجة", "a": "كتابة تعليمات للكمبيوتر بلغة يفهمها لينفذها."},
+	{"q": "شنو Python", "a": "لغة برمجة شائعة في الذكاء الاصطناعي."},
+	{"q": "شنو GDScript", "a": "لغة برمجة محرك Godot، تشبه Python."}
+  ]
+}
