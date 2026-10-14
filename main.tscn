@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cq00f056n1d05"]
 
-[ext_resource type="Script" uid="uid://bnumr452ml4ei" path="res://scripts/ChatUI.gd" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://bxgjtvn3cm8su" path="res://scripts/Main.gd" id="1_ig7tw"]
 
 [node name="Main" type="Control" unique_id=704307852]
 layout_mode = 3
@@ -11,7 +11,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ig7tw")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=810015650]
+[node name="VBox" type="VBoxContainer" parent="." unique_id=810015650]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -19,23 +19,27 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ChatLog" type="RichTextLabel" parent="VBoxContainer" unique_id=139871372]
+[node name="Log" type="RichTextLabel" parent="VBox" unique_id=139871372]
 layout_mode = 2
 size_flags_vertical = 3
 focus_mode = 2
 horizontal_alignment = 2
 selection_enabled = true
 
-[node name="InputRow" type="HBoxContainer" parent="VBoxContainer" unique_id=446749218]
+[node name="InputRow" type="HBoxContainer" parent="VBox" unique_id=446749218]
 layout_mode = 2
 
-[node name="Input" type="LineEdit" parent="VBoxContainer/InputRow" unique_id=323010672]
+[node name="Input" type="LineEdit" parent="VBox/InputRow" unique_id=323010672]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="SendBtn" type="Button" parent="VBoxContainer/InputRow" unique_id=1225516572]
+[node name="TrainBtn" type="Button" parent="VBox/InputRow" unique_id=1225516572]
 layout_mode = 2
-text = "ارسل"
+text = "train"
 
-[node name="Status" type="Label" parent="VBoxContainer" unique_id=244837855]
+[node name="GenBtn" type="Button" parent="VBox/InputRow" unique_id=1273767810]
+layout_mode = 2
+text = "Gen"
+
+[node name="Status" type="Label" parent="VBox" unique_id=244837855]
 layout_mode = 2

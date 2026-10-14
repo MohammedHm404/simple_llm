@@ -13,4 +13,3 @@ config_version=5
 config/name="Simple_LLM"
 run/main_scene="uid://cq00f056n1d05"
 config/features=PackedStringArray("4.7")
-config/icon="res://icon.svg"
